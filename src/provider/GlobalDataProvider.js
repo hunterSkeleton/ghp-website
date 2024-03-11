@@ -11,38 +11,38 @@ const GlobalData = {
     header: {
       logo: require("../imgs/landing/education.png"),
       menu: require("../imgs/landing/menu.png"),
-      name: "Swanand Kavitkar",
+      name: "Shreejeet Kadamr",
       degreeShort: "MSCS",
-      universityShort: "ASU",
-      university: "Arizona State University",
+      universityShort: "GaTech",
+      university: "Georgia Institute of Technology",
     },
 
     // footer data common to all pages
     footer: {
       socialMediaURLs: [
         {
-          url: "https://www.linkedin.com/in/s-threepio/",
+          url: "https://www.linkedin.com/in/shreejeet-kadam/",
           icon: require("../imgs/landing/linkedin.png"),
         },
         {
-          url: "https://github.com/S-Threepio",
+          url: "https://github.com/hunterSkeleton",
           icon: require("../imgs/landing/github.png"),
         },
-        {
-          url: "https://s-threepio.medium.com/",
-          icon: require("../imgs/landing/medium.png"),
-        },
+        // {
+        //   url: "https://s-threepio.medium.com/",
+        //   icon: require("../imgs/landing/medium.png"),
+        // },
       ],
-      copyright: "© 2023 by Swanand Kavitkar",
-      call: "+1 (623) 283-8579",
-      email: "skavitka@asu.edu",
+      copyright: "© 2024 by Shreejeet Kadam",
+      call: "+1 (470) 815-8243",
+      email: "skshreejeetkadam@gmail.com",
     },
 
     // This is the left part of the landing page with profile picture (Looks like an ID Card)
     cardsection: {
       socialMediaURLs: [
         {
-          url: "https://www.linkedin.com/in/s-threepio/",
+          url: "https://www.linkedin.com/in/shreejeet-kadam/",
           icon: require("../imgs/landing/linkedin-blue.png"),
         },
         {
