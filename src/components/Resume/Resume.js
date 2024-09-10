@@ -8,7 +8,7 @@ const Resume = () => {
   const handleView = () => {
     // Create a temporary <a> element to trigger the download
     const link = document.createElement("a");
-    link.href = process.env.PUBLIC_URL + "/Swanand_Kavitkar.pdf";
+    link.href = process.env.PUBLIC_URL + "/Shreejeet_Kadam_Resume.pdf";
     link.target = "_blank";
     link.rel = "noopener noreferrer";
     link.type = "application/pdf";
@@ -18,8 +18,8 @@ const Resume = () => {
   const handleDownload = () => {
     // Create a temporary <a> element to trigger the download
     const link = document.createElement("a");
-    link.href = process.env.PUBLIC_URL + "/Swanand_Kavitkar.pdf";
-    link.download = "Swanand_Kavitkar_Resume.pdf"; // Specify the file name you want the user to download as
+    link.href = process.env.PUBLIC_URL + "/Shreejeet_Kadam_Resume.pdf";
+    link.download = "Shreejeet_Kadam_Resume.pdf"; // Specify the file name you want the user to download as
     link.target = "_blank"; // Open the file in a new tab
 
     document.body.appendChild(link);
@@ -66,7 +66,24 @@ const Resume = () => {
           </div>
         </div>
       </div>
-
+      <div className="flex flex-col items-center w-screen p-10 bg-[#F3F3F3]">
+        <div className="flex flex-col items-start lg:w-[1000px] xl:w-[1200px]">
+          <div className="text-5xl font-bold text-left">Technical Skills</div>
+          <div className="flex flex-col items-start">
+            <ul className="flex flex-col items-start gap-3 m-10 text-lg md:gap-2">
+              {resume.skills.map((skill, index) => (
+                <li className="list-disc" key={index}>
+                  <b className="font-semibold">{skill.type} :</b>{" "}
+                  <span className="sm:hidden">
+                    <br />
+                  </span>
+                  <span className="text-lg"> {skill.info}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </div>
       <div className="bg-white flex justify-center my-1">
         <div className="bg-white w-full justify-start self-center lg:w-[1000px] xl:w-[1200px] flex p-6">
           <div className="flex flex-col gap-10 py-4 items-center lg:items-start mb-2  ">

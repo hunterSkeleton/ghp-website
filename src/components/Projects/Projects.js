@@ -8,7 +8,20 @@ const Projects = () => {
   const handleFilter = (type) => {
     setFilter(type.toLowerCase());
   };
-  const types = ["All", "Frontend", "Backend", "AWS", "Mobile", "Blockchain"];
+  // const types = ["All", "Frontend", "Backend", "AWS", "Mobile", "Blockchain"];
+  const types = [
+    "All",
+    // "Kubernetes",
+    "Cloud",
+    // "Security",
+    "LLVM",
+    // "analysis",
+    "Malware",
+    // "Networking",
+    "Policy",
+    // "gdpr",
+    // "hipaa",
+  ];
 
   return (
     <div className="flex flex-col flex-1 sm:overflow-y-scroll scrollbar-hide pb-4 md:pb-0">

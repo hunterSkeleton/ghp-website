@@ -14,13 +14,13 @@ const Project = (props) => {
       enterFrom="opacity-0"
       enterTo="opacity-100"
     >
-      <div className={`flex  ${visible ? "flex-col" : "hidden"} sm:px-5`}>
-        <img
+      <div className={`flex  ${visible ? "flex-col" : "hidden"} sm:px-5 card`}>
+        {/* <img
           src={data.img}
           alt="Project"
           className="self-center object-fill h-56 p-2 px-6 w-120"
-        />
-        <div className="px-6 pt-4 text-xl font-semibold">
+        /> */}
+        <div className="px-6 pt-4 text-2xl font-semibold">
           {data.title}{" "}
           <a href={data.link} className="font-bold underline text-blue-950 ">
             [Github]
@@ -28,9 +28,9 @@ const Project = (props) => {
         </div>
         <div className="px-6 font-semibold">{data.year}</div>
         <div className="px-6 pt-4 font-serif text-base">
-          {data.tech.join(" - ")}
+          {data.tech.join(" | ")}
         </div>
-        <ul className="px-6 py-4 text-lg">
+        <ul className="px-6 py-4 text-lg mx-5">
           {data.points.map((point, index) => (
             <li key={index} className="p-1 list-disc">
               {point}

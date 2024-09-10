@@ -11,8 +11,8 @@ const GlobalData = {
     header: {
       logo: require("../imgs/landing/education.png"),
       menu: require("../imgs/landing/menu.png"),
-      name: "Shreejeet Kadamr",
-      degreeShort: "MSCS",
+      name: "Shreejeet Kadam",
+      degreeShort: "MSCSEC",
       universityShort: "GaTech",
       university: "Georgia Institute of Technology",
     },
@@ -27,6 +27,10 @@ const GlobalData = {
         {
           url: "https://github.com/hunterSkeleton",
           icon: require("../imgs/landing/github.png"),
+        },
+        {
+          url: "https://app.cybrary.it/profile/hs_hunter",
+          icon: require("../imgs/landing/cybrary.png"),
         },
         // {
         //   url: "https://s-threepio.medium.com/",
@@ -43,69 +47,74 @@ const GlobalData = {
       socialMediaURLs: [
         {
           url: "https://www.linkedin.com/in/shreejeet-kadam/",
-          icon: require("../imgs/landing/linkedin-blue.png"),
+          icon: require("../imgs/landing/linkedin.png"),
+        },
+        // {
+        //   url: "https://leetcode.com/Masked_Yurnero/",
+        //   icon: require("../imgs/landing/leetcode.png"),
+        // },
+        {
+          url: "https://app.cybrary.it/profile/hs_hunter",
+          icon: require("../imgs/landing/cybrary.png"),
         },
         {
-          url: "https://leetcode.com/Masked_Yurnero/",
-          icon: require("../imgs/landing/leetcode.png"),
-        },
-        {
-          url: "https://s-threepio.medium.com/",
-          icon: require("../imgs/landing/medium.png"),
-        },
-        {
-          url: "https://github.com/S-Threepio",
+          url: "https://github.com/hunterSkeleton",
           icon: require("../imgs/landing/github.png"),
         },
       ],
       pfp: require("../imgs/landing/pfp.jpg"),
-      firstName: "Swanand",
-      lastName: "Kavitkar",
-      degreeShort: "MSCS @ ASU",
-      date: "Graduating May 2024",
+      firstName: "Shreejeet",
+      lastName: "Kadam",
+      degreeShort: "MSCSEC @ GaTech",
+      date: "Graduated May 2023",
     },
 
     // This is the right part of the landing page with a general welcome statement and summary
+    /*
+      Certainly! Here's a version with modified fields:
+
+---
+
+I am a Georgia Tech graduate with a Master’s degree in Cybersecurity, specializing in penetration testing, automation, DevSecOps, and network security. My strong academic background and hands-on experience have equipped me with a deep understanding of these critical areas, fueling my passion for solving complex security issues and enhancing system efficiency.
+
+I am actively seeking full-time opportunities in cybersecurity, including roles focused on penetration testing, automation, DevSecOps, and network security, where I can apply my skills and make a significant impact on organizational security and operational excellence.
+
+If you are looking for a dedicated professional with expertise in these domains, please feel free to reach out to me via phone or email.
+
+Have a great day!
+
+---
+    */
+
     bio: {
       bigGreet: "Hello",
-      intro: "I am Swanand and I code.",
+      intro: "I am Shreejeet and I wear a white hat.",
       description: (
         <>
           <p>
-            I am currently pursuing a Master's degree in{" "}
+            I am a graduate of <b className="font-semibold">Georgia Tech</b>{" "}
+            with a Master’s degree in{" "}
+            <b className="font-semibold">Cybersecurity</b>, specializing in{" "}
             <b className="font-semibold">
-              {" "}
-              Computer Science at Arizona State University.
+              Penetration Testing, Automation, DevSecOps, and Network Security.
             </b>{" "}
-            Previously, I worked as a{" "}
-            <b className="font-semibold">Software Engineer at HSBC,</b> where I
-            played a crucial role in developing{" "}
-            <b className="font-semibold">
-              feature-rich mobile banking applications
-            </b>{" "}
-            to enhance customer experience and{" "}
-            <b className="font-semibold">optimize transactions.</b> With a solid
-            background in{" "}
-            <b className="font-semibold">Web and Android development</b>, I
-            possess expertise in{" "}
-            <b className="font-semibold">AWS Cloud services.</b>
+            My strong academic background and hands-on experience have provided
+            me with a comprehensive understanding of these critical areas,
+            fueling my passion for solving complex security issues and enhancing
+            system efficiency.
+            <br />
+            <br />I am actively seeking full-time opportunities in{" "}
+            <b className="font-semibold">cybersecurity</b>, where I can apply my
+            skills and make a significant impact on organizational security and
+            operational excellence.
             <br />
             <br />
-            <b className="font-semibold">
-              I am actively pursuing full-time software engineer opportunities
-            </b>{" "}
-            to utilize my exceptional academic achievements and hands-on
-            experience, aiming to create significant contributions within the
-            technology industry.
-            <br />
-            <br /> If you are seeking someone to{" "}
-            <b className="font-semibold">
-              build scalable and high-quality software products,
-            </b>{" "}
-            feel free to reach out to me on phone/email mentioned below.
+            If you are looking for a dedicated professional with expertise in
+            these domains, please feel free to reach out to me via phone or
+            email.
           </p>
           <br />
-          <b className="font-semibold">Have a great day!!</b>
+          <b className="font-semibold">Have a great day!</b>
         </>
       ),
     },
@@ -117,24 +126,21 @@ const GlobalData = {
     label: "Resume",
     summary: (
       <>
-        Throughout my career, I have contributed to positive business results
-        through effective organization, prioritization and follow-through of key
-        organizational projects.
+        Cybersecurity expert with a Master's from Georgia Tech, specializing in
+        penetration testing, automation, DevSecOps, and network security.
+        Experienced in identifying vulnerabilities, streamlining processes, and
+        deploying scalable security solutions.
         <br />
-        As a Software developer I have always exercised a calculated and
-        methodical approach to problem-solving. While I am independently
-        motivated, I appreciate collective efforts and collaborate productively
-        within group settings. To illustrate the scope of my career history and
-        professional competencies, please take a moment to review my enclosed
-        resume.
+        Seeking opportunities to apply my skills and contribute to
+        organizational security.
       </>
     ),
     education: [
       {
-        year: "2022-2024",
-        university: "Arizona State University",
+        year: "2021-2023",
+        university: "Georgia Institute of Technology",
         gpa: "4.0",
-        info: " I am currently enrolled at the Master of Science program in Computer Science at the Arizona State University. My coursework includes Cloud Computing, Distributed Database Systems, Machine Learning Fairness and Security.",
+        info: " I graduated from Georgia Tech with a Master of Science in Cybersecurity. My coursework included Malware Analysis/Reverse Engineering, Network Security, Software Analysis and Test, Secure Computer Systems, Cryptography, Enterprise Risk Management, Privacy Tech Policy Law and DevSecOps",
       },
       {
         year: "2015-2019",
@@ -142,66 +148,94 @@ const GlobalData = {
         gpa: "3.98",
         info: `I acquired my Bachelor of Technology degree in Computer Engineering from the Vishwakarma Institute of Technology. The
     relevant coursework included Data Structures, Design and Analysis
-    of Algorithms, Web Technologies etc.`,
+    of Algorithms, Operating Systems, Computer Networks etc.`,
+      },
+    ],
+    skills: [
+      {
+        type: "Programming/Scripting Languages",
+        info: "C, C++, Python, Javascript, Typescript, GO",
+      },
+      {
+        type: "DevSecOps",
+        info: "Terraform, Kubernetes, Container Orchestration, Docker, Cluster Management, Jenkins",
+      },
+      {
+        type: "Web Development",
+        info: "React, Angular, PostgreSQL, Express.js, Node.js, Tailwind, Bootstrap, Flask, REST API",
+      },
+      {
+        type: "Cybersecurity",
+        info: "Application Security, Vulnerability Management, Penetration Testing, Threat Intelligence, Network Security, IAM, IDS, EDR, DFIR, SOAR, SIEM, DLP, OWASP Top 10, MITRE ATT&CK, NIST CSF, SOC 2",
+      },
+      {
+        type: "Tools",
+        info: "GDB, PWNDBG, Ghidra, Pwntools, OpenSSL, Splunk, Wireshark, Burp Suite, Metasploit, Nessus, Git",
+      },
+      {
+        type: "Software Development Practices",
+        info: "Agile, Scrum, Jira, Test Driven Development, GitHub, Continuous Integration",
       },
     ],
     work: [
       {
-        year: "August 2022 - Current",
-        organisation: "Arizona State University",
-        role: "Graduate Service Assistant",
+        year: "July 2023 - July 2024",
+        organisation: "Launchpad23, Inc.",
+        role: "SDE",
         detail: [
-          "I am currently working as a graduate service assistant for the CSE 434 : Computer networks.",
-          "My responsibilities include grading the assignments, labs and projects submitted by the students as well as resolving their queries related to grading",
+          "Engineered a NextJS onboarding platform incorporating Keycloak for IAM, authentication, and RBAC, reducing attack surface by 30%.",
+          "Integrated Stripe for seamless payments and deployed on DigitalOcean VPC, boosting user experience by 40% and reducing onboarding time by 60%.",
         ],
       },
       {
-        year: "July 2019 - May 2021",
-        organisation: "HSBC Software Development India",
-        role: "Software Engineer",
+        year: "June 2022 - August 2022",
+        organisation: "Adversarial Risk Management",
+        role: "Intern",
         detail: [
-          "Built the HSBC Oman mobile banking app with 7 separate journeys involving payments and QR code features to deliver the regulatory requirements for Oman HSBC customers",
-          "Designed the architecture for Oman features to make them entity wise scalable using JSON objects as input configuration",
-          "Integrated features of Oman, Qatar and India into the HSBC’s global application spanning 60 countries with more than 20 modules to standardize all the developed functionalities",
-          "Refactored the Cheque deposit journeys of UK entity to align it with the MVP architecture with potential 60% code reduction in view fragments",
-          "Maintained the UI and Unit test coverage of 90% for all the features developed, to confirm that the different features within the HSBC global application are performing as expected",
+          "Crafted an advanced CMS module employing React and STRAPI, integrating GitHub Webhooks for automated builds; achieved a 20% increase in deployment consistency, improving overall project stability and user experience.",
+          "Implemented access control measures through Google IAM for 20+ subdomains, enhancing security protocols and reducing unauthorized access incidents by 80%, while streamlining user roles and permissions across the organization.",
+        ],
+      },
+      {
+        year: "July 2018 - May 2019",
+        organisation: "Nvidia",
+        role: "Intern",
+        detail: [
+          "Developed a multi-platform application framework to aggregate and visualize nightly GPU driver test data, deploying the tool for over 50 users, streamlining the testing and reporting processes.",
+          "Created a robust reporting mechanism that automated the daily generation of PDF reports, resulting in a consistent output of over 30 reports each week, improving operational efficiency across the organization.",
         ],
       },
     ],
   },
 
   // -------------------------------------Skills Page Data-----------------------------------------
-  skills: {
+  /*skills: {
     url: "/skills",
     label: "Skills",
     tech: [
       {
-        type: "Programming Languages",
-        info: "Python, Java, Kotlin, C++, C, Javascript",
+        type: "Programming/Scripting Languages",
+        info: "C, C++, Python, Javascript, Typescript, GO",
       },
       {
-        type: "Android Development",
-        info: "MVVM, Jetpack components, LiveData, RxJava, Retrofit, Kotlin Coroutines, View and Data Binding",
+        type: "DevSecOps",
+        info: "Terraform, Kubernetes, Container Orchestration, Docker, Cluster Management, Jenkins",
       },
       {
-        type: "Web Technology",
-        info: "ReactJS, CSS, Tailwind CSS, Bootstrap, Jquery",
+        type: "Web Development",
+        info: "React, Angular, PostgreSQL, Express.js, Node.js, Tailwind, Bootstrap, Flask, REST API",
       },
       {
-        type: "Backend",
-        info: "Spring, SpringBoot, Hibernate, ExpressJS, NodeJS",
+        type: "Cybersecurity",
+        info: "Application Security, Vulnerability Management, Penetration Testing, Threat Intelligence, Network Security, IAM, IDS, EDR, DFIR, SOAR, SIEM, DLP, OWASP Top 10, MITRE ATT&CK, NIST CSF, SOC 2",
       },
       {
-        type: "AWS Cloud",
-        info: "S3, Dynamo-DB, API-Gateway, Lambda, Transcribe, Comprehend, Cognito",
-      },
-      {
-        type: "Containerization",
-        info: "Docker, Vagrant, WSL2",
+        type: "Tools",
+        info: "GDB, PWNDBG, Ghidra, Pwntools, OpenSSL, Splunk, Wireshark, Burp Suite, Metasploit, Nessus, Git",
       },
       {
         type: "Software Development Practices",
-        info: "Agile, Scrum, JIRA, Confluence, Github",
+        info: "Agile, Scrum, Jira, Test Driven Development, GitHub, Continuous Integration",
       },
     ],
     soft: [
@@ -237,226 +271,87 @@ const GlobalData = {
       },
     ],
   },
-
+  */
   // -------------------------------------Projects Page Data-----------------------------------------
   projects: {
     url: "/projects",
     label: "Projects",
     projData: [
       {
-        img: require("../imgs/projects/attendance_tracker.jpg"),
-        title: "Automated Attendance Tracker",
-        type: ["aws", "backend"],
-        link: "https://github.com/S-Threepio/Classroom-Attendance-Tracker",
-        year: "May 2023",
+        // img: require("../imgs/projects/devsecops.jpg"),
+        title: "DevSecOps",
+        type: ["kubernetes", "cloud", "security"],
+        link: "https://github.com/your-repo-link",
+        year: "March 2023",
         points: [
-          ` Engineered a classroom assistant tool by creating a private cloud infrastructure using Openstack, enabling educators
-          to effortlessly manage student progress and assignments, resulting in a 40% reduction in administrative workload.
-          `,
-          `Incorporated AWS Lambda, S3, and DynamoDB to enhance accuracy and efficiency by 25% in real-time student
-          identification while handling 100 concurrent requests within 60 seconds.`,
-        ],
-        tech: [
-          "Openstack",
-          "AWS Lambda",
-          "AWS S3",
-          "AWS DynamoDB",
-          "AWS SQS",
-          "AWS ECR",
-          "Docker",
-        ],
-      },
-      {
-        img: require("../imgs/projects/port.png"),
-        title: "Morpholio : The Portfolio Builder",
-        link: "https://github.com/S-Threepio/S-Threepio.github.io",
-        year: "January 2023",
-        type: ["frontend"],
-        points: [
-          `Designed an innovative personal website builder using ReactJS and Tailwind CSS, resulting in a 50% reduction in
-          development time and a 60% increase in user satisfaction.`,
-          `Optimized website performance by implementing React Hooks and Context API, enabling seamless data sharing across
-          components and enhancing user experience`,
-        ],
-        tech: ["React", "Javascript", "React Hooks", "Tailwind CSS"],
-      },
-      {
-        img: require("../imgs/projects/digit.png"),
-        title: " Handwritten Digits Classifier Flask Application",
-        link: "https://github.com/S-Threepio/Handwritten-Digits-Classifier-Flask-Application",
-        year: "November 2022",
-        type: ["aws", "backend"],
-        points: [
-          `Developed an ML application for handwritten digits classification, using Flask server and Docker for seamless deployment.`,
-          `Utilized Kubernetes clusters on AWS EKS and GCP GKE for streamlined deployment.`,
-          `Integrated Prometheus monitoring using Helm-charts for performance monitoring`,
+          "Implemented a Flask application deployment via Kubernetes, simulating a production cluster; utilized Istio for Canary deployments and conducted Fault Injection tests, ensuring high availability and reducing downtime by 75%.",
+          "Deployed Flask application on AWS using Terraform for Infrastructure-as-Code, provisioning EC2 instances, S3 and RDS buckets, and Elastic Load Balancer for seamless scalability and reliable infrastructure.",
+          "Built a DAST automation pipeline that improved security protocols, reduced manual testing by 30%, and empowered the security team to expand coverage to 98% of applications.",
         ],
         tech: [
           "Kubernetes",
-          "Docker",
-          "AWS EKS",
+          "Istio",
+          "Terraform",
+          "MinIO",
+          "Jenkins",
           "AWS EC2",
-          "GCP GKE",
-          "Prometheus",
-          "Helm",
-        ],
-      },
-      {
-        img: require("../imgs/projects/meeting.png"),
-        title: "Meeting Assistant Web App",
-        link: "https://github.com/S-Threepio/voyager-react",
-        year: "November 2020",
-        type: ["aws", "frontend"],
-        points: [
-          `Created meeting assistant web app with speech-to-text transcription, meeting recording analysis and MoM generation
-          increasing productivity by 55%.`,
-          `Leveraged ReactJS and Material UI for a seamless user experience, a 20% increase in user retention`,
-          `Integrated AWS services for transcription,analysis, storage and security achieving 87% performance improvement.`,
-        ],
-        tech: [
-          "React",
-          "Material UI",
-          "AWS Cognito",
-          "AWS Transcribe",
-          "AWS Comprehend",
-          "AWS Lambda",
           "AWS S3",
-          "AWS Lambda",
-          "AWS DynamoDB",
-          "AWS API Gateway",
+          "AWS RDS",
         ],
       },
       {
-        img: require("../imgs/projects/custody.jpg"),
-        title: "Computer Forensics: Chain of Custody",
-        type: ["blockchain"],
-        link: "https://github.com/S-Threepio/CSE469-project/tree/main",
+        // img: require("../imgs/projects/software_analysis.jpg"),
+        title: "Software Analysis and Test",
+        type: ["llvm", "security", "analysis"],
+        link: "https://github.com/your-repo-link",
         year: "October 2022",
         points: [
-          "Created a digital equivalent to a chain of custody to record the history of the evidence from the time it is found until the case is closed.",
-          "Utilized SHA-256 functions to maintain the validity of the custody chain and maintain the zero trust policy.",
+          "Developed an LLVM-based analysis tool for C++ programs, generating inter-procedural call, constraint, and value-flow graphs.",
+          "Performed taint analysis to identify and reduce potential security vulnerabilities by 20%.",
         ],
-        tech: [
-          "Python",
-          "C++",
-          "Bash Scripting",
-          "Blockchain",
-          "MultiThreading",
-          "SHA256 Encryption",
-        ],
+        tech: ["LLVM", "C++"],
       },
       {
-        img: require("../imgs/projects/blockchain.jpg"),
-        title: "Web Application for Crypto-Currency",
-        link: "https://github.com/s-threepio/cryptochain",
-        year: "March 2019",
-        type: ["blockchain", "frontend", "backend"],
+        // img: require("../imgs/projects/malware_analysis.jpg"),
+        title: "Malware Analysis",
+        type: ["malware", "security", "analysis"],
+        link: "https://github.com/your-repo-link",
+        year: "September 2022",
         points: [
-          "Created a web application for a cryptocurrency network backed by a blockchain including private wallets for users and miners.",
-          "Dockerized the whole application using WSL2 and Docker to create separate containers for users,miners and redis server to establish separation of concerns",
+          "Conducted in-depth malware analysis using IDAPro, identifying malicious functions and code patterns, enhancing threat detection and reducing false positives by 25%.",
+          "Created custom tools integrated with IDAPro, producing Control Flow Graphs and Data Dependence Graphs, improving static analysis efficiency by 40%.",
+          "Designed a Dynamic Analysis solution using the PIN Tool framework to observe system calls and memory patterns, reducing debugging efforts by 45% and boosting system performance by 20%.",
         ],
-        tech: [
-          "Javascript",
-          "Redis",
-          "ExpressJS",
-          "Node.JS",
-          "Docker",
-          "WSL2",
-          "React",
-          "Material UI",
-          "SHA256 Encryption",
-        ],
+        tech: ["IDAPro", "Intel Pin", "C++", "Python"],
       },
       {
-        img: require("../imgs/projects/ai.png"),
-        title: "Guardian Angel Mobile Application",
-        link: "https://github.com/S-Threepio/Guardian-Angel-Mobile-Application",
-        year: "October 2023",
-        type: ["mobile", "backend"],
+        // img: require("../imgs/projects/secure_computer_systems.jpg"),
+        title: "Secure Computer Systems",
+        type: ["security", "networking"],
+        link: "https://github.com/your-repo-link",
+        year: "April 2022",
         points: [
-          "Created a Guardian Angel application which can Send an Email, Schedule a Task, Play music based on your mood and Summarize Texts.",
-          "Utilizes OpenAI GPT to analyze and interpret the nature or category of the user's request.",
+          "Analyzed and emulated distributed security models, mitigating potential threats by 60% and achieving comprehensive system protection in diverse operational environments.",
         ],
-        tech: [
-          "Android",
-          "OpenAI GPT ",
-          "Flask",
-          "MVVM",
-          "View Binding",
-          "Kotlin Coroutines",
-          "Spotify API",
-        ],
+        tech: ["Python", "C++", "Bash"],
       },
       {
-        img: require("../imgs/projects/TYT.png"),
-        title: "Thank You Tree Android App",
-        link: "https://github.com/S-Threepio/thank_you_tree_app",
-        year: "January 2020",
-        type: ["mobile", "aws"],
+        // img: require("../imgs/projects/privacy_policies.jpg"),
+        title: "Privacy Policies",
+        type: ["policy", "gdpr", "hipaa"],
+        link: "https://github.com/your-repo-link",
+        year: "September 2021",
         points: [
-          "Created a thank you tree android app for users to thank their colleagues online as a part of Great place to work initiative.",
-          "Designed the CRUD features on thank you notes and a dashboard for a reward based system at HSBC as well as share receipt functionality.",
-          "Made with Jetpack components and a robust MVVM Architecture with robust AWS backend.",
+          "Designed a privacy-preserving COVID app with a sustainable business model and robust privacy policy.",
+          "Achieved GDPR and HIPAA compliance, leading to a 25% increase in user adoption and retention.",
         ],
-        tech: [
-          "Android",
-          "RxJava",
-          "MVVM",
-          "Jetpack Compose",
-          "LiveData",
-          "View Binding",
-          "Kotlin Coroutines",
-          "AWS S3",
-          "AWS Dynamo DB",
-          "AWS API Gateway",
-        ],
-      },
-      {
-        img: require("../imgs/projects/health.png"),
-        title: "Health Monitoring Application",
-        link: "https://github.com/S-Threepio/Health-Monitoring-Application",
-        year: "December 2023",
-        type: ["mobile"],
-        points: [
-          "Delivered a Health Monitoring Application achieving 95% accuracy in heart rate calculation through red intensity pixel analysis.",
-          "Utilized accelerometer algorithms for respiratory rate determination with 98% precision.",
-          "Leveraged Room DB for efficient data storage, reducing application response time by 20%.",
-        ],
-        tech: [
-          "Android",
-          "MVVM",
-          "Jetpack Compose",
-          "Service",
-          "View Binding",
-          "Kotlin Coroutines",
-        ],
-      },
-
-      {
-        img: require("../imgs/projects/utility.webp"),
-        title: "Utility Application Android",
-        link: "https://github.com/S-Threepio/UtilityApplication",
-        year: "June 2020",
-        type: ["mobile"],
-        points: [
-          "Combined the most commonly used elements in android development into a single application to study them comparitively.",
-          "I have also implemented architecture patterns to familiarize students with separation of concerns",
-        ],
-        tech: [
-          "Android",
-          "MVVM",
-          "Asynchronous Task",
-          "API call handling",
-          "Broadcast",
-          "Shared Preferences",
-          "Room Database Implementation",
-        ],
+        tech: ["Privacy Policies", "GDPR", "HIPAA"],
       },
     ],
   },
 
   // -------------------------------------Blogs Page Data-----------------------------------------
-  blogs: {
+  /*blogs: {
     url: "/blogs",
     label: "Blogs",
     cover: require("../imgs/blog/cover.jfif"),
@@ -487,10 +382,10 @@ const GlobalData = {
         info: "I wrote about the workings of the blockchain technology. I also explained how your own cryptocurrency can be created by using a redis publish subscribe model for peers.",
       },
     ],
-  },
+  },*/
 
   // -------------------------------------Certification Page Data-----------------------------------------
-  certifications: {
+  /*certifications: {
     url: "/certifications",
     label: "Certifications",
     certs: [
@@ -521,10 +416,10 @@ const GlobalData = {
         image: require("../imgs/certs/cour.png"),
       },
     ],
-  },
+  },*/
 
   // -------------------------------------Hobbies Page Data-----------------------------------------
-  hobbies: {
+  /*hobbies: {
     url: "/hobbies",
     label: "Hobbies",
     hobbyData: [
@@ -541,7 +436,7 @@ const GlobalData = {
           'Apart from listening to music, I also love to create my own with the beautiful 88 key beast. I compose when I am lucky and I play when I am not busy. I try to incorporate what Beethoven said about music."To play a wrong note is insignificant, but to play without passion is inexcusable."',
       },
     ],
-  },
+  },*/
 };
 
 const GlobalDataContext = createContext();
